@@ -32,7 +32,7 @@ def crate_basketball():
 
 # inserts initial players into Basketball table
 @app.route('/db_insert')
-def insert_players():
+def inserting():
     conn = psycopg2.connect("postgresql://nba_players_user:PB0ky7JPS5pCvFOdThEnJXbN6xHPU3EM@dpg-cshmjce8ii6s73bhp5eg-a/nba_players")
     cur = conn.cursor()
     cur.execute('''
